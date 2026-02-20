@@ -1,34 +1,47 @@
-[![Shipping files](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml)
-# ds-project-template
+💎 King County Luxury Real Estate: Investment Strategy
+👤 Prepared for: Jennifer Montgomery (High-End Stakeholder)
+This project delivers a data-driven investment strategy for a high-budget client. The goal: Identify a "Statement Property" in King County for a high-prestige lifestyle and a profitable resell within 12 months.
 
-Template for creating ds simple projects
+🎯 The Mission
+Jennifer Montgomery is looking for more than a home—she wants a status symbol. My analysis focuses on:
 
-## Requirements
+High-End Quality: Only houses with Architectural Grade 10-13.
 
-- pyenv
-- python==3.11.3
+The "Show-off" Factor: Exclusive waterfront locations.
 
-## Setup
+Maximum ROI: Identifying features that drive the "Price per sqft" for a quick 1-year exit.
 
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
+📊 Key Data Insights (EDA)
+Our Exploratory Data Analysis revealed three primary value drivers:
 
-* setting the python version locally to 3.11.3
-* creating a virtual environment using the `venv` module
-* activating your newly created environment 
-* upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
-* installing the required packages via `pip`
+The Location Goldmine: Waterfront properties are in a different asset class. The price per sqft is 94% higher than inland ($508 vs $262). Scarcity ensures long-term value.
 
-*Note: We do have the `requirements.txt` in the repository but please try to first install packages by yourself.*
+The Renovation Bonus: In the luxury segment, renovated homes command an average $500,000 premium over original conditions.
 
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
+The Size Multiplier: While standard homes grow linearly, luxury homes show an exponential price increase with size. "Bigger is better" is the rule for prestige buyers.
 
-```bash
-pip freeze > requirements.txt
-```
+💡 Strategic Recommendations
+Target the "Gold Coast": Focus exclusively on waterfront properties to guarantee exclusivity.
 
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
+Buy "Ready-to-Move-In": To meet the 1-year resell window, Jennifer should prioritize renovated homes (Grade 11+) to attract premium buyers immediately.
+
+Go Big: Choose properties with maximum square footage, as size is the biggest driver for resale profit in this segment.
+
+🛠️ Tech Stack & Methodology
+Python: Data cleaning and statistical analysis.
+
+Pandas & NumPy: Data manipulation and segmenting.
+
+Seaborn & Matplotlib: Professional business visualizations.
+
+DBeaver/SQL: Initial database exploration.
+
+📂 Repository Structure
+🚀 How to Run
+Clone this repository.
+
+Ensure kc_house_data.csv is in the /data folder.
 
 
---- 
-## In-Case of Failure
-If you fail to do the setup by yourself, then please revisit the previous repositories where you have done the setup and follow those steps.
+Author: Liana Hilß
+Context: Developed as part of the Neue Fische Data Analytics Bootcamp (February 2026).
